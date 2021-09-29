@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Variety of Calculators</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="html/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="html/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="index.html" method="POST">
+        <div>
+            <h2>Law of Motion Calculator</h2>
+            <label for="mass"> Mass: </label> <input type="text" id="mass" name="mass" placeholder="Ex: 20">
+            <hr>
+            <label for="acc"> Acceleration: </label> <input type="text" id="acc" name="acc" placeholder="Ex: 500">
+            <hr>
+            <input type="button" value="Calculate" id="motionButton" name="motionCalc" onclick="secondLaw(this.mass, this.acc);" />
+            <p id="secondLawOut"></p>
+        </div>
+        <hr>
+
+        <div>
+            <h2>Displacement Calculator</h2>
+            <label for="initVel"> Initital Velocity: </label> <input type="text" id="initVel" name="initVel"
+                placeholder="Ex: 20">
+            <hr>
+            <label for="time"> Time in Seconds: </label> <input type="text" id="time" name="time" placeholder="Ex: 10">
+            <hr>
+            <label for="acc"> Acceleration: </label> <input type="text" id="accel" name="accel" placeholder="Ex: 100">
+            <hr>
+            <input type="button" value="Calculate" id="displaceButton" name="displacementCalc"
+                onclick="displacement(this.initVel, this.time, this.acc);" />
+            <p id="displacementOut"></p>
+        </div>
+        <hr>
+
+
+        <div>
+            <h2>Quadratic Formula Calculator</h2>
+            <label for="a"> First Side Of Triangle: </label> <input type="text" id="a" name="a" placeholder="Ex: 2">
+            <hr>
+            <label for="b"> Second Side of Triangle: </label> <input type="text" id="b" name="b" placeholder="Ex: 7">
+            <hr>
+            <label for="c"> Third Side of Triangle: </label> <input type="text" id="c" name="c" placeholder="Ex: 5">
+            <hr>
+            <input type="button" value="Calculate" id="quadButton" name="quadCalc"
+                onclick="quadratic(this.a, this.b, this.c);" />
+            <p id="quadraticOut"></p>
+        </div>
+        <hr>
+
+        <div>
+            <h2>Present Value Calculator</h2>
+            <label for="pmt"> Dollar Amount of each Annuity Payment Stream: </label> <input type="text" id="pmt"
+                name="pmt" placeholder="Ex: 1000">
+            <hr>
+            <label for="interest"> Interest Rate: </label> <input type="text" id="interest" name="interest"
+                placeholder="Ex: 10">
+            <hr>
+            <label for="periodNum"> Number of periods in which payments will be made: </label> <input type="text" id="periodNum"
+                name="periodNum" placeholder="Ex: 6">
+            <hr>
+            <input type="button" value="Calculate" id="presButton" name="presCalc"
+                onclick="presentVal(this.pmt, this.interest, this.periodNum);" />
+            <p id="presentValOut"></p>
+        </div>
+
+
+    </form>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

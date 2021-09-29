@@ -1,0 +1,12 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(PermanentMarker-Regular.ttf);
+}
+
+body {
+    color:cadetblue;
+    text-align: center;
+    font-size: 120%;
+    border-radius: 5px;
+    font-family: myFirstFont;
+}
